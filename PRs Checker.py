@@ -2,10 +2,15 @@ import base64
 from github import Github
 from pprint import pprint
 
+# Enter a github user's name
+usr = str(input("Enter Username: "))
+
 # Github username
-username = "jacobperera8"
+username = usr
+
 # pygithub object
 g = Github()
+
 # get that user by username
 user = g.get_user(username)
 
